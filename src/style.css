@@ -2,19 +2,79 @@
 {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,
 body
 {
     height: 100vh;
-    font-family: 'Poppins';
+    font-family: 'Poppins', Arial, Helvetica, sans-serif ;
+    background: rgb(27, 27, 31);
 }
 
 .webgl
 {
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     outline: none;
+}
+
+.container{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    color: white;
+    margin-top: 8rem;
+    margin-left: 6.5rem;
+}
+h1 {
+    font-size: 4rem;
+}
+p {
+    font-size: 1.3rem;
+    width: 55%;
+    color: rgb(107, 107, 122);
+    margin-top: 1em;
+    line-height: 1.8rem;
+    
+}
+button{
+    font-size: 1rem;
+    padding: .5em 1em;
+    margin-top: 1.7em;
+    background-color: #3855b6;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+@media only screen and (max-width: 700px) {
+    .container{
+        margin: 3rem 2rem;
+        
+
+        /*
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        */
+    }  
+    h1 {
+        font-size: 3rem;
+    }
+    p {
+        font-size: 1.5rem;
+        width: 75%;
+        color: rgb(107, 107, 122);
+        margin-top: 1em;
+        line-height: 2.1rem;
+    }
+    button{
+        width: 8em;
+    }
 }
